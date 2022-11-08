@@ -1,0 +1,64 @@
+Name: Joe Baillie
+C++ Project 2
+Overall Objective: Create program that can create Rooms, add events to rooms, 
+print the room data, and trim the amount of events.
+This is different from the first part of the project for multiple reasons:
+* Rooms are held in a linked list of Room nodes
+* There is no set buffer for events
+* Events exist as event nodes in a dynamically allocated linked list of event 
+nodes
+
+==================================================================================
+LEVEL 1: READ, LOG, AND PRINT SENSOR DATA FROM ONE ROOM WITHOUT TRIMMING
+Functions to complete in Level 1 (x implies completed):
+HomeSecurity.cpp:
+* HomeEvent: x
+	* Constructor x
+		* timeStamp x
+		* eventId x 
+		* sensorId x
+		* sensorValue x
+	* GetTime x 
+	* GetEventId x
+	* GetSensorId x 
+	* GetSensorValue x
+	* SetData x
+	* Print x
+* Temperature Event, COEvent, IntruderEvent x
+	*Constructor (same as HomeEvent) (auto) x
+	* SetData x 
+	* Print x 
+* EventNode 
+	* Constructor x 
+		* pNextNode (singly linked list) x 
+		* pEvent x 
+	* Destructor (not sure how to make, may save for later stage of 
+	  development)
+* EventList
+	* Constructor x 
+		* pEvents x 
+		* totalEvents x 
+	* Destructor (not sure how to make, may save for later stage of 
+	  development)
+	* AddEvent x 
+	* GetEventCount x 
+	* PrintEvents x 
+	* Maybe PrintList {?} (done prior, do not need to touch) x 
+Room.cpp:
+* Room:
+	* Constructor x
+		* eventList x
+		* roomId x 
+	* LoadData x 
+	* PrintEvents x 
+	* GetRoomId x 
+	* AddEvent x 
+	* SetRoomId (added function, used in RoomList->AddRoom x 
+* RoomNode
+	* Constructor x 
+		* pNextNode (singlyLinked) x 
+		* pRoom x
+
+===================================================================================
+LEVEL 2: READ, LOG, AND PRINT SENSOR DATA FROM MULTIPLE ROOMS WITHOUT TRIMMING
+Already completed in level 1 (nice). 
